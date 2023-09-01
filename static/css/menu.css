@@ -1,0 +1,65 @@
+/* Потом удалить */
+.container__header {
+    background-color: var(--black-color);
+    padding: 0 165px;
+}
+
+
+.menu {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.list__menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.serch {
+    display: flex;
+    column-gap: 10px;
+}
+
+.logo {
+    margin-right: 19px;
+}
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.box__sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    align-items: flex-end;
+}
+
+.title__sidebar {
+    color: var(--green-color);
+    color: #43FFD2;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.description__sidebar {
+    font-size: 10px;
+    text-align: justify;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #00000033;
+    padding: 20px 18px;
+    row-gap: 20px;
+}
+
