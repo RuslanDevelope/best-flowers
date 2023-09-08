@@ -230,6 +230,7 @@
 }
 
 .container__popular-bouquets {
+    position: relative;
     background-color: var(--black-color);
     padding: 0 165px;
 }
@@ -242,11 +243,59 @@
     margin-left: 0;
 }
 
+.container__popular-bouquets .title,
+.container__popular-bouquets .description {
+    position: relative;
+    z-index: 2;
+}
+
 .container__popular-bouquets > .description {
     padding-bottom: 71px;
 }
 
+.background__popular-bouquets {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 974px;
+    height: 748px;
+    background-image: url(../img/image\ 115.jpg);
 
+    z-index: var(--middle-layer);
+}
+
+.ellipse__popular-bouquets-p {
+    position: absolute;
+    width: 571.277px;
+    height: 396.429px;
+    transform: rotate(32.828deg);
+    top: calc( (var(--height-img) / 2) + 348px);
+    left: 50%;
+
+    z-index: var(--lower-layer);
+}
+
+.ellipse__popular-bouquets-g {
+    position: absolute;
+    width: 813.998px;
+    height: 661.887px;
+    transform: rotate(32.828deg);
+    filter: blur(125px);
+
+    top: 348px;
+    left: 0;
+
+    z-index: var(--lower-layer);
+}
+
+.ellipse__popular-bouquets-g.ellipse-g {
+    background-color: rgba(67, 255, 210, 0.47);
+}
+
+.popular-bouquets .container {
+    position: relative;
+    overflow: visible;
+}
 
 
 

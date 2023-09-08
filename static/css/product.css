@@ -5,6 +5,8 @@
     flex-direction: column;
     row-gap: 10px;
     align-items:start;
+
+    z-index: var(--upper-layer);
 }
 .img__product {
     width: var(--width-img);
@@ -22,7 +24,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    z-index: 3;
+    z-index: var(--upper-layer);
     transform: translate(25%,-25%);
 
     color:var(--black-color);

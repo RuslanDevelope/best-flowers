@@ -19,6 +19,9 @@
     --pink-color:#D978AC;
     --width-img:350px;
     --height-img:450px;
+    --lower-layer:0;
+    --middle-layer:1;
+    --upper-layer:2;
 }
 
 .body {

@@ -13,6 +13,7 @@
 }
 
 .view__slider{
+    position: relative;
     width: calc( var(--width) - 330px);
     margin: 0 auto;
 }
@@ -34,6 +35,8 @@
     top: calc( var(--height-img) / 2);
 
     transform: translate(calc(-100% - 20px),0);
+
+    z-index: var(--upper-layer);
 }
 
 .right__slider {
@@ -42,4 +45,6 @@
     top: calc( var(--height-img) / 2);
 
     transform: translate(calc(100% + 20px),0);
+    
+    z-index: var(--upper-layer);
 }
