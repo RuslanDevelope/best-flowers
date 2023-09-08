@@ -1,5 +1,8 @@
 @import url(reset.css);
 @import url(menu.css);
+@import url(main.css);
+@import url(product.css);
+@import url(slider.css);
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
@@ -14,6 +17,8 @@
     --white-color:#FFF;
     --green-color:#43FFD2;
     --pink-color:#D978AC;
+    --width-img:350px;
+    --height-img:450px;
 }
 
 .body {
@@ -76,4 +81,43 @@
     line-height: normal;
     letter-spacing: 1.2px;
     text-decoration: underline;
+}
+
+.button-g {
+    background: var(--green-color);
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.button-transparent {
+    padding: 16px 76px;
+    background: transparent;
+    border: 0.5px solid #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+a.button_show {
+    color: var(--pink-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-decoration-line: underline;
+    justify-self: right;
+}
+
+.ellipse-p {
+    background: #7D2253;
+    filter: blur(125px);
+}
+
+.ellipse-g {
+    background: #43FFD2;
+    filter: blur(125px);
 }

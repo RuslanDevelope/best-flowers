@@ -1,0 +1,252 @@
+.container__intro {
+    position: relative;
+    height: 975px;
+    width: 100%;
+    background: url(../img/main.png), lightgray 50%;
+    background-size:  130% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.container__intro::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 975px;
+    content: "";
+    background-image: url(../img/main_under.png);
+    background-size: 130% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    z-index: 1;
+}
+
+.elipse_green {
+    position: absolute;
+    width: 358.902px;
+    height: 293.047px;
+    transform: rotate(41.599deg);
+    border-radius: 358.902px;
+    top:50%;
+
+    transform: translate(0,-50%);
+}
+
+.elipse_pink {
+    position: absolute;
+    width: 472.65px;
+    height: 211.054px;
+    transform: rotate(-43.21deg);
+    border-radius: 472.65px;
+
+    top: 50%;
+    right: 0;
+
+    transform: translate(0,-100%);
+}
+
+.eclipse__intro {
+    position: absolute;
+    width: 100%;
+    height: 406px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(4, 10, 10, 0.00) 0%, #040A0A 100%);
+    z-index: 2;
+}
+
+.signature__intro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 305px;
+    height: 175px;
+    background-image: url(../img/intro/singnature.png);
+    transform: rotate(-10.255deg); 
+    transform: translate(-50%,0);
+    z-index: 2;
+}
+
+.content__intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 93px;
+}
+
+.first {
+    position: relative;
+    z-index: 1;
+}
+
+.second {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 2;
+
+    transform: translate(-50%,0);
+}
+
+.button-show-catalog {
+    position: relative;
+    z-index: 2;
+    padding: 16px 50px;
+    margin-top: 47px;
+}
+
+.description__content__intro {
+    margin-top: 153px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.container__catalog {
+    padding-top: 100px;
+    padding-bottom: 223px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--black-color);
+    overflow: hidden;
+}
+
+.elipse_pink__catalog {
+    position: absolute;
+    display: inline-block;
+    border-radius: 707.545px;
+    width: 707.545px;
+    height: 236.872px;
+    
+    left: 0;
+    top: 50%;
+    
+    transform: rotate(32.828deg) translate(-10%,50%);
+}
+
+.elipse_green__catalog {
+    position: absolute;
+    display: inline-block;
+    width: 879.44px;
+    height: 211.054px;
+    border-radius: 879.44px;
+    
+    left: 50%;
+    top: 50%;
+    
+    transform: rotate(32.828deg);
+}
+
+.content__catalog {
+    position: relative;
+    padding: 0 165px;
+    height: 700px;
+    z-index: 3;
+}
+
+.background-text__catalog {
+    position: absolute;
+    color: #0A1717;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 200px; /* 100% */
+    letter-spacing: 8px;
+}
+
+.background-text__catalog-first {
+    right: 0;
+    top:100px;
+    transform: translate(3%,50%);
+}
+
+.background-text__catalog-second {
+    left: -30px;
+    top: calc(100% / 3);
+
+    transform: translate(0,50%);
+}
+
+.background-text__catalog-three {
+    right: 0;
+    top: calc(100% / 3 * 2);
+    transform: translate(51%,0);
+}
+
+.contents_catalog {
+    display: flex;
+    column-gap: 30px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.el__col:first-child {
+    padding-left: 65px;
+}
+
+.wide {
+    width: 540px;
+}
+
+.descriptions__catalog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.description.description__catalog {
+    font-size: 18px;
+    display: inline-block;
+    text-align: justify;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+.block__catalog {
+    display: grid;
+    flex-direction: column;
+    padding: 50px 30px 30px 30px;
+}
+
+.list__catalog {
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.list__catalog li {
+    list-style:disc;
+}
+
+.item__block__catalog {
+    transform: translate(10px,0);
+}
+
+.container__popular-bouquets {
+    background-color: var(--black-color);
+    padding: 0 165px;
+}
+
+.container__popular-bouquets p {
+    margin-left: 380px;
+}
+
+.container__popular-bouquets p:first-child {
+    margin-left: 0;
+}
+
+.container__popular-bouquets > .description {
+    padding-bottom: 71px;
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.first {
+    color: #8A8686;
+    font-family: Cormorant;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    line-height: 73px;
+}
+
+.second {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    /* transform: translate(-25%,-25%); */
+    /* color: #FFF; */
+    color: blue;
+    font-family: Cormorant;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 61px;
+}
