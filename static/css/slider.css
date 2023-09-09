@@ -3,6 +3,7 @@
     width: var(--width);
     background-color: var(--black-color);
     margin: 0 auto;
+    padding-bottom: 181px;
 }
 .slider {
     position: relative;
@@ -45,6 +46,6 @@
     top: calc( var(--height-img) / 2);
 
     transform: translate(calc(100% + 20px),0);
-    
+
     z-index: var(--upper-layer);
 }

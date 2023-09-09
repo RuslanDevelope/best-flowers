@@ -98,7 +98,7 @@
 .button-transparent {
     padding: 16px 76px;
     background: transparent;
-    border: 0.5px solid #FFF;
+    border: 0.5px solid var(--white-color);
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
@@ -121,6 +121,20 @@ a.button_show {
 }
 
 .ellipse-g {
-    background: #43FFD2;
+    background: var(--green-color);
     filter: blur(125px);
+}
+
+.title-step {
+    color: var(--pink-color);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.description-step {
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
 }
