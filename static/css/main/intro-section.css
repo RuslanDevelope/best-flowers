@@ -1,0 +1,115 @@
+.intro .container {
+    overflow-x: hidden;
+}
+
+.container__intro {
+    position: relative;
+    height: 975px;
+    width: 100%;
+    background: url(../../img/background/main.png), lightgray 50%;
+    background-size:  130% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.container__intro::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 975px;
+    content: "";
+    background-image: url(../../img/background/main_under.png);
+    background-size: 130% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    z-index: var(--lower-upper-layer);
+}
+
+.content__intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 93px;
+}
+
+.content__intro .description,
+.content__intro .button-g {
+    position: relative;
+    z-index: var(--middle-middle-layer);
+}
+
+.content__intro .description {
+    margin-top: 153px;
+}
+
+.content__intro .button-g {
+    padding: 16px 50px;
+    margin-top: 47px;
+}
+
+.first-main-title {
+    position: relative;
+    z-index: var(lower-middle-layer);
+}
+
+.second-main-title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: var(--middle-lower-layer);
+
+    transform: translate(-50%,0);
+}
+
+/* Background style intro section main.html */
+.container__intro .ellipse-g {
+    position: absolute;
+    width: 358.902px;
+    height: 293.047px;
+    transform: rotate(41.599deg);
+    border-radius: 358.902px;
+    top:50%;
+
+    transform: translate(0,-50%);
+}
+
+.container__intro .ellipse-p {
+    position: absolute;
+    width: 472.65px;
+    height: 211.054px;
+    transform: rotate(-43.21deg);
+    border-radius: 472.65px;
+
+    top: 50%;
+    right: 0;
+
+    transform: translate(0,-100%);
+}
+
+.eclipse__intro {
+    position: absolute;
+    width: 100%;
+    height: 406px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(4, 10, 10, 0.00) 0%, #040A0A 100%);
+    z-index: var(--middle-lower-layer);
+}
+
+.signature__intro {
+    position: absolute;
+    width: 305px;
+    height: 175px;
+    background-image: url(../../img/background/singnature.png);
+
+    bottom: 0;
+    right: 0;
+
+    transform: rotate(-10.255deg); 
+    transform: translate(-50%,0);
+
+    z-index: var(--middle-lower-layer);
+}

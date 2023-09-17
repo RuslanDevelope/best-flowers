@@ -1,0 +1,124 @@
+.catalog .container {
+    overflow: hidden;
+}
+
+.container__catalog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 223px;
+    background: var(--black-color);
+}
+
+.content__catalog {
+    position: relative;
+    padding: 0 165px;
+    height: 700px;
+    z-index: var(--middle-lower-layer);
+}
+
+.content__catalog .content {
+    display: flex;
+    column-gap: 30px;
+}
+
+.content__catalog .column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.descriptions__catalog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.descriptions__catalog .description {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+.content__catalog .content .column .el__col:first-child {
+    margin-left: 65px;
+}
+
+.content__catalog .content .column .wide {
+    width: 540px;
+}
+
+.block__catalog {
+    display: grid;
+    padding: 50px 30px 30px 30px;
+}
+
+.list__catalog {
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.list__catalog li {
+    list-style:disc;
+}
+
+.block__catalog .list__catalog .name-item-list {
+    transform: translate(10px,0);
+}
+
+/* backgrond style section catalog  main.html */
+.background-text__catalog {
+    position: absolute;
+    color: #0A1717;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 200px;
+    letter-spacing: 8px;
+}
+
+.background-text__catalog-first {
+    right: 0;
+    top:100px;
+    transform: translate(3%,50%);
+}
+
+.background-text__catalog-second {
+    left: -30px;
+    top: calc(100% / 3);
+
+    transform: translate(0,50%);
+}
+
+.background-text__catalog-three {
+    right: 0;
+    top: calc(100% / 3 * 2);
+    transform: translate(51%,0);
+}
+
+.container__catalog .ellipse-g {
+    position: absolute;
+    display: inline-block;
+    width: 879.44px;
+    height: 211.054px;
+    border-radius: 879.44px;
+    
+    left: 50%;
+    top: 50%;
+    
+    transform: rotate(32.828deg);
+}
+
+.container__catalog .ellipse-p {
+    position: absolute;
+    display: inline-block;
+    border-radius: 707.545px;
+    width: 707.545px;
+    height: 236.872px;
+    
+    left: 0;
+    top: 50%;
+    
+    transform: rotate(32.828deg) translate(-10%,50%);
+}

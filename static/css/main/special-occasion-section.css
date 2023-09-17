@@ -1,0 +1,113 @@
+.container__special-occasion {
+    position: relative;
+    background-color: var(--black-color);
+    padding: 0 165px;
+    padding-bottom: 160px;
+    overflow: hidden;
+}
+
+.container__special-occasion > p.title {
+    margin-left: 380px;
+}
+
+.container__special-occasion > p.title:first-child {
+    margin-left: 0;
+}
+
+.title-title {
+    position: relative;
+}
+
+
+.title-title::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 255px;
+    height: 1px;
+    background: var(--pink-color);
+    top: 50%;
+    left: -285px;
+}
+
+.content__special-occasion {
+    position: relative;
+    display: flex;
+    column-gap: 30px;
+    margin-left: 74px;
+    margin-top: 30px;
+}
+
+.content__special-occasion > .column:first-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+.content__special-occasion > .column:first-child > * {
+    width: 255px;
+    text-align: justify;
+}
+
+.content__special-occasion > .column >.image {
+    width: 255px;
+    height: 292px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.content__special-occasion > .column:last-child {
+    position: relative;
+    display: flex;
+    column-gap: 30px;
+    z-index: var(--middle-lower-layer);
+}
+
+.content__special-occasion > .column >.image:last-child {
+    position: absolute;
+    height: 223px;
+    right: 0;
+    top:-253px;
+}
+
+.content__special-occasion > .column >.image:nth-child(2) {
+    width:160px;;
+}
+
+.content__special-occasion > .column ul li {
+    list-style: disc;
+    margin-bottom: 15px;
+}
+
+.content__special-occasion > .column ul li:last-child {
+    margin-bottom: 0;
+}
+
+.content__special-occasion > .column > .button-g {
+    position: relative;
+    padding: 16px 17px 16px 18px;
+}
+
+.content__special-occasion > .column > .button-g:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 60px;
+    background: url(../../img/content/Arrow_1.png) no-repeat;
+    left: -21px;
+    top: -60%;
+
+}
+
+/* Background style sprcial-occasion section */
+.container__special-occasion > .ellipse-p {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 50%;
+    width: 354.93px;
+    height: 364.216px;
+    transform: rotate(32.828deg);
+
+    transform: translate(0,-25%);
+}

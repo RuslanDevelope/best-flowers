@@ -1,3 +1,5 @@
+@import url(product-cart.css);
+
 .container-slider {
     position: relative;
     width: var(--width);
@@ -19,6 +21,11 @@
     margin: 0 auto;
 }
 
+.view__slider .button_show {
+    position: relative;
+    z-index: var(--middle-lower-layer);
+}
+
 
 .products__slider {
     display: inline-flex;
@@ -37,7 +44,7 @@
 
     transform: translate(calc(-100% - 20px),0);
 
-    z-index: var(--upper-layer);
+    z-index: var(--middle-lower-layer);
 }
 
 .right__slider {
@@ -47,5 +54,11 @@
 
     transform: translate(calc(100% + 20px),0);
 
-    z-index: var(--upper-layer);
+    z-index: var(--middle-lower-layer);
+}
+
+.left__slider:hover svg path,
+.right__slider:hover svg path{
+    fill: var(--pink-color);
+    transition: all .3s ease-in-out;
 }

@@ -1,0 +1,55 @@
+.container__order-instruction {
+    padding: 0 165px;
+    padding-bottom: 160px;
+    background-color: var(--black-color);
+}
+
+.instruction {
+    position: relative;
+    display: flex;
+    margin-top: 65px;
+    column-gap: 95px;
+    padding-left: calc((var(--width) - 330px) / 3) ;
+}
+
+.instruction::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 10px;
+    background-color: var(--pink-color);
+    left: calc((var(--width) - 330px) / 3);
+    top:-40px;
+}
+
+.instruction::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--pink-color);
+
+    top:0;
+    right: -106px;
+}
+.instruction .column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.oreder-instruction .container {
+    position: relative;
+    z-index: var(lower-lower-layer);
+}
+
+/* Background style roder-instruction */
+.background__order-instruction {
+    position: absolute;
+    height: 845px;
+
+    left: 0;
+    bottom:0;
+}
