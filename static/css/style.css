@@ -194,6 +194,36 @@ a.button_show {
     letter-spacing: 0.56px;
 }
 
+
+label input[type="checkbox"] {
+    display: none;
+}
+
+.fake-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 0.5px solid #FFF;
+}
+.category-filtr .link__item:hover .fake-checkbox,
+.fake-checkbox:hover {
+    border-color: var(--green-color);
+    transition: all .3s ease-in-out;
+}
+
+label input[type="checkbox"]:checked + .fake-checkbox {
+    background-color: var(--green-color);
+    border: var(--green-color);
+
+
+    transition: all .5s in-out;
+}
+
+
+
 .up-scroll {
     width: 100px;
     height: 100px;

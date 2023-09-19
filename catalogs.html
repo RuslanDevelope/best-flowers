@@ -174,41 +174,45 @@
                             <div class="left-sidebar wrapper">
                                 <div class="category-filtr">
                                     <p class="title-list">По свету</p>
-                                    <label><input type="checkbox" name="" class="select-filter">нежные</label>
-                                    <label><input type="checkbox" name="" class="select-filter">яркие</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>нежные</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>яркие</label>
     
                                 </div>
                                 <div class="category-filtr">
                                     <p class="title-list">По цвету</p>
-                                    <label><input type="checkbox" name="" class="select-filter">белый</label>
-                                    <label><input type="checkbox" name="" class="select-filter">желтый</label>
-                                    <label><input type="checkbox" name="" class="select-filter">зеленый</label>
-                                    <label><input type="checkbox" name="" class="select-filter">красный</label>
-                                    <label><input type="checkbox" name="" class="select-filter">оранжевый</label>
-                                    <label><input type="checkbox" name="" class="select-filter">розовый</label>
-                                    <label><input type="checkbox" name="" class="select-filter">синий</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>белый</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>желтый</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>зеленый</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>красный</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>оранжевый</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>розовый</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>синий</label>
                                 </div>
                                 <div class="category-filtr">
                                     <p class="title-list">по формату</p>
-                                    <label><input type="checkbox" name="" class="select-filter">букет</label>
-                                    <label><input type="checkbox" name="" class="select-filter">в вазе</label>
-                                    <label><input type="checkbox" name="" class="select-filter">в конверте</label>
-                                    <label><input type="checkbox" name="" class="select-filter">в корзине</label>
-                                    <label><input type="checkbox" name="" class="select-filter">в шляпной коробке</label>
-                                    <label><input type="checkbox" name="" class="select-filter">в ящике</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>букет</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>в вазе</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>в конверте</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>в корзине</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>в шляпной коробке</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>в ящике</label>
                                 </div>
                                 <div class="category-filtr">
                                     <p class="title-list">стоимость</p>
-                                    <input type="range" name="" id="">
+                                    <div class="double-range">
+                                        <div class="slider-track"></div>
+                                        <input type="range" id="range-slider-1" min="0" max="100" value="30">
+                                        <input type="range" id="range-slider-2" min="0" max="100" value="70">
+                                    </div>
                                     <p class="price">Цена: <span>50.00 ₽</span> – <span>400.00 ₽</span></p>
                                 </div>
                                 <div class="category-filtr">
                                     <p class="title-list">по цветку</p>
-                                    <label><input type="checkbox" name="" class="select-filter">Альстромерия (2)</label>
-                                    <label><input type="checkbox" name="" class="select-filter">Антуриум (1)</label>
-                                    <label><input type="checkbox" name="" class="select-filter">Аспарагус (1)</label>
-                                    <label><input type="checkbox" name="" class="select-filter">Астильба (7)</label>
-                                    <label><input type="checkbox" name="" class="select-filter">Астранция (1)</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>Альстромерия (2)</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>Антуриум (1)</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>Аспарагус (1)</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>Астильба (7)</label>
+                                    <label class="link__item"><input type="checkbox" name="" class="select-filter"><span class="fake-checkbox"></span>Астранция (1)</label>
                                 </div>
                                 <input type="button" value="Сбросить фильтр" class="button-transparent">
                             </div>
@@ -445,6 +449,7 @@
         </div>
     </footer>
     <script>
+        $('.up-scroll','.content__catalogs').fadeOut()
         $('.item__menu','.menu .list__menu').hover(() => {
             event.currentTarget.classList.add('active')
             // event.target.parentElement.classList.add('active')
@@ -476,9 +481,16 @@
             }
         }
         $(document).scroll(hideLeftSideBar)
-        function length(item) {
-            console.log(item.width())
-        }
+        $(document).scroll(() => {
+            console.log(window.pageYOffset)
+            console.log(window.innerWidth)
+            if(window.innerHeight <= window.pageYOffset) {
+                $('.up-scroll','.content__catalogs').fadeIn(300)
+            } else if (window.pageYOffset < window.innerHeight) {
+                $('.up-scroll','.content__catalogs').fadeOut(300)
+            }
+            
+        })
     </script>
 </body>
 
