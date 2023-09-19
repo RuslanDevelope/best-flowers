@@ -2,6 +2,7 @@
 @import url(menu.css);
 @import url(footer.css);
 @import url(main.css);
+@import url(catalogs.css);
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
@@ -91,6 +92,13 @@
     text-decoration: underline;
 }
 
+.link-navigation {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
 .button-g {
     background: var(--green-color);
     color: #000;
@@ -139,7 +147,7 @@
 
     transition: all .3s ease-in-out;
 }
-
+.link-navigation:hover,
 .link__item:hover {
     color: #43FFD2;
     text-decoration-line: underline;
@@ -184,4 +192,26 @@ a.button_show {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.56px;
+}
+
+.up-scroll {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+}
+
+.up-scroll:hover svg path {
+    fill: #000;
+
+    transition: all .3s ease-in-out;
+}
+
+.up-scroll:hover {
+    background-color: var(--green-color);
+
+    border: 0.5px solid transparent;
+
+    transition: all .3s ease-in-out;
 }

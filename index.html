@@ -554,7 +554,7 @@
         function hideLeftSideBar() {
             if(window.pageYOffset > $('.menu').height()) {
                 $('.header').addClass('scrol-header')
-                $('.left-sidebar','.menu').slideUp(1000).promise().done(() => {
+                $('.left-sidebar','.menu').slideUp(500).promise().done(() => {
                     if($('.scrol-container','.menu').html().trim() === '') {
                         let phone = $('.phone','.contact').clone()
                         let bucket = $('.bucket','.menu').removeClass('wrapper').clone()
@@ -562,7 +562,7 @@
                             .hide()
                             .append(phone)
                             .append(bucket)
-                            .slideDown('fast')
+                            .fadeIn(200)
                     }
                 })
                 
