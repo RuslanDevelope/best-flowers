@@ -1,0 +1,64 @@
+@import url(product-cart.css);
+
+.container-slider {
+    position: relative;
+    width: var(--width);
+    background-color: var(--black-color);
+    margin: 0 auto;
+    padding-bottom: 181px;
+}
+.slider {
+    position: relative;
+    width: calc( var(--width) - 330px + 30px);
+    margin: 0 auto;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.view__slider{
+    position: relative;
+    width: calc( var(--width) - 330px);
+    margin: 0 auto;
+}
+
+.view__slider .button_show {
+    position: relative;
+    z-index: var(--middle-lower-layer);
+}
+
+
+.products__slider {
+    display: inline-flex;
+    column-gap: 30px;
+}
+
+.viewport {
+    width: 100%;
+    height: 100%;
+}
+
+.left__slider {
+    position: absolute;
+    left: 165px;
+    top: calc( var(--height-img) / 2);
+
+    transform: translate(calc(-100% - 20px),0);
+
+    z-index: var(--middle-lower-layer);
+}
+
+.right__slider {
+    position: absolute;
+    right: 165px;
+    top: calc( var(--height-img) / 2);
+
+    transform: translate(calc(100% + 20px),0);
+
+    z-index: var(--middle-lower-layer);
+}
+
+.left__slider:hover svg path,
+.right__slider:hover svg path{
+    fill: var(--pink-color);
+    transition: all .3s ease-in-out;
+}

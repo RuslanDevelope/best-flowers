@@ -1,0 +1,248 @@
+@import url(reset.css);
+@import url(menu.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(catalogs.css);
+@import url(product.css);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* font-family: 'Oswald', sans-serif; oswald */
+/* font-family: 'Cormorant', serif; cormorand*/
+/* font-family: 'Roboto Condensed', sans-serif; roboto */
+
+:root {
+    --width: 1440px;
+    --black-color:#040A0A;
+    --white-color:#FFF;
+    --green-color:#43FFD2;
+    --pink-color:#D978AC;
+    --width-img:350px;
+    --height-img:450px;
+    --lower-lower-layer:0;
+    --lower-middle-layer:1;
+    --lower-upper-layer:2;
+    --middle-lower-layer:3;
+    --middle-middle-layer:4;
+    --middle-upper-layer:5;
+    --upper-lower-layer:6;
+    --upper-middle-layer:7;
+    --upper-upper-layer:8;
+}
+
+.body {
+    position: relative;
+}
+
+.container {
+    max-width: var(--width);
+    width: 100%;
+    margin: 0 auto;
+}
+* {
+    color: var(--white-color);
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.main-title {
+    font-family: 'Cormorant', serif;
+    font-size: 200px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 40px;
+}
+
+.title {
+    font-family: 'Cormorant', serif;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+
+.title-list {
+    color: var(--green-color);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.name-item-list {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+.link-list {
+    color: var(--pink-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-decoration: underline;
+}
+
+.link-navigation {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.button-g {
+    background: var(--green-color);
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+}
+
+.button-g:hover {
+    background-color: #7D2253;
+    color: var(--white-color);
+
+    transition: all .3s ease-in-out;
+}
+
+.button-g:active {
+    background: #7D2253;
+    box-shadow: 0px 0px 10px 0px #1B000E inset;
+
+    transition: all .3s ease-in-out;
+}
+
+.button-transparent {
+    padding: 16px 76px;
+    background: transparent;
+    border: 0.5px solid var(--white-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.button-transparent:hover {
+    background: var(--green-color);
+    color: #000;
+    border: 0.5px solid transparent;
+
+    transition: all .3s ease-in-out;
+}
+
+.button-transparent:active {
+    background: #43FFD2;
+    box-shadow: 0px 0px 10px 0px #01281F inset;
+
+    transition: all .3s ease-in-out;
+}
+.link-navigation:hover,
+.link__item:hover {
+    color: #43FFD2;
+    text-decoration-line: underline;
+
+    transition: all .3s ease-in-out;
+}
+
+a.button_show {
+    color: var(--pink-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-decoration-line: underline;
+    justify-self: right;
+}
+
+.button_show:hover {
+    color: var(--white-color);
+    transition: all .3s ease-in-out;
+}
+
+.ellipse-p {
+    background: #7D2253;
+    filter: blur(125px);
+}
+
+.ellipse-g {
+    background: var(--green-color);
+    filter: blur(125px);
+}
+
+.title-step {
+    color: var(--pink-color);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.description-step {
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+
+
+label input[type="checkbox"] {
+    display: none;
+}
+
+.fake-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 0.5px solid #FFF;
+}
+.category-filtr .link__item:hover .fake-checkbox,
+.fake-checkbox:hover {
+    border-color: var(--green-color);
+    transition: all .3s ease-in-out;
+}
+
+label input[type="checkbox"]:checked + .fake-checkbox {
+    background-color: var(--green-color);
+    border: var(--green-color);
+
+
+    transition: all .5s in-out;
+}
+
+
+
+.up-scroll {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+}
+
+.up-scroll:hover svg path {
+    fill: #000;
+
+    transition: all .3s ease-in-out;
+}
+
+.up-scroll:hover {
+    background-color: var(--green-color);
+
+    border: 0.5px solid transparent;
+
+    transition: all .3s ease-in-out;
+}
